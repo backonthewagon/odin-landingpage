@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  padding: 0;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: space-between;*/
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-color: #141618;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  max-width: 1400px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* begin header section stuff */
+.header {
+  background-color: #1f2937;
+  height: 300px;
+}
+
+.titlebar {
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titlebar h1 {
+  color: #f9faf8;
+  font-size: 24px;
+}
+
+.hero {
+  padding: 10px 100px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.hero .left {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+.hero .right {
+  color: #e5e7eb;
+  background-color: #707987;
+}
+
+.hero h2 {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.titlebar ul {
+  font-size: 18px;
+  color: #e5e7eb;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+/* end header section stuff */
+
+/* begin center infobox section */
+
+.center {
+  background-color: white;
+  flex-grow: 1;
+}
+
+.center h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.infobox {
+  width: 250px;
+}
+
+.infobox-img {
+  width: 250px;
+  height: 250px;
+  border: 5px solid #3882f6;
+  border-radius: 25px;
+}
+
+.footer {
+  background-color: #1f2937;
+  height: 200px;
+}
+
+/* begin quote section stuff */
+
+.quote {
+  background-color: #e5e7eb;
+  height: 300px;
+  padding: 50px 0 50px;
+}
+
+.quote blockquote {
+  box-sizing: border-box;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  padding: 30px 140px 0;
+}
+
+.quote figcaption {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right;
+  padding: 0 160px;
+}
+
+/* end quote section stuff */
+
+/* begin call to action section stuff */
+
+.signup {
+  background-color: white;
+}
+
+.signupbox {
+  box-sizing: border-box;
+  background-color: #3882f6;
+  border-radius: 20px;
+  color: white;
+  width: 900px;
+  height: 150px;
+  padding: 20px;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.signupbox h3 {
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.signupbox p {
+  margin: 0;
+  padding: 0;
+}
+
+.signupbox button {
+  width: 150px;
+  height: 40px;
+  background-color: #3882f6;
+  border: 2px solid white;
+  border-radius: 15px;
+  color: white;
+  font-weight: 700;
+}
+
+.signupbox button:hover {
+  background-color: white;
+  color: #3882f6;
+  cursor:pointer;
+}
