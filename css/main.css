@@ -1,10 +1,12 @@
+
+
 body {
   margin: 0;
   padding: 0;
   /*display: flex;
   flex-direction: column;
   justify-content: space-between;*/
-  font-family: sans-serif;
+  font-family: arial,sans-serif;
   min-height: 100vh;
   background-color: #141618;
   display: flex;
@@ -24,10 +26,13 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: #3882f6;
+}
+
 /* begin header section stuff */
 .header {
   background-color: #1f2937;
-  height: 300px;
 }
 
 .titlebar {
@@ -43,24 +48,54 @@ a {
 
 .hero {
   padding: 10px 100px;
-  box-sizing: border-box;
   display: flex;
+  justify-content: space-between;
 }
 
 .hero .left {
   color: #e5e7eb;
   font-size: 18px;
+  width: 500px;
+  padding: 50px 0 100px;
+}
+
+.hero .left button {
+  width: 150px;
+  height: 40px;
+  background-color: #3882f6;
+  border: 2px solid #3882f6;
+  border-radius: 15px;
+  color: white;
+  font-weight: 700;
+}
+
+.hero .left button:hover {
+  background-color: white;
+  color: #3882f6;
+  cursor: pointer;
+  border-color: white;
 }
 
 .hero .right {
   color: #e5e7eb;
   background-color: #707987;
+  width: 500px;
+  height: 220px;
+  margin: 50px 0 0 0;
+}
+
+.hero .right p {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .hero h2 {
   color: #f9faf8;
   font-size: 48px;
   font-weight: 900;
+  margin: 0;
+  padding: 0;
 }
 
 .titlebar ul {
@@ -70,6 +105,10 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
+}
+
+.titlebar li {
+  padding: 10px 20px;
 }
 /* end header section stuff */
 
@@ -81,22 +120,28 @@ a {
 }
 
 .center h3 {
+  font-size: 28px;
+  font-weight: 700;
   width: 100%;
   text-align: center;
+  margin: 40px 0;
 }
 
 .info {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .infobox {
-  width: 250px;
+  width: 200px;
 }
 
 .infobox-img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border: 5px solid #3882f6;
   border-radius: 25px;
 }
@@ -131,7 +176,7 @@ a {
 
 /* end quote section stuff */
 
-/* begin call to action section stuff */
+/* begin signup section stuff */
 
 .signup {
   background-color: white;
@@ -177,3 +222,21 @@ a {
   color: #3882f6;
   cursor:pointer;
 }
+
+/* end signup section stuff */
+
+/* begin footer stuff */
+
+.footer {
+  color: #e5e7eb;
+  font-size: 18px;
+  height: 100px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 16px;
+  margin: 40px auto 0;
+}
+
+/* end footer stuff */
